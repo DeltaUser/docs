@@ -1,0 +1,50 @@
+.repoName {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: black;
+    font-size: 50px;
+    z-index: -100;
+    font-family: text;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.files {
+    font-family: text;
+    z-index: -100;
+}
+
+canvas {
+    display: block;
+}
+
+.files div {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    z-index: -100;
+    color: gray;
+}
+
+body {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: text;
+    src: url(./fonts/SF-UI-Text-Bold.otf);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
