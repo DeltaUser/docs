@@ -113,10 +113,10 @@ async function getMDFILES(owner, name) {
 
 (async () => {
     app.listen(process.env.PORT || 5000, () => console.log(`[API] Listening to http://localhost:${process.env.PORT || 5000}/`));
-    // app.get('/api/makeDocs', async (req, res) => {
-    //     const owner = req.query.owner;
-    //     const name = req.query.name;
-    //     if(!owner && !name) return res.send(300);
-    //     res.send((await getMDFILES(owner, name)).PAGES);
-    // });
+    app.get('/api/makeDocs', async (req, res) => {
+        const owner = req.query.owner;
+        const name = req.query.name;
+        if(!owner && !name) return res.send(300);
+        res.send((await getMDFILES(owner, name)).PAGES);
+    });
 })();
